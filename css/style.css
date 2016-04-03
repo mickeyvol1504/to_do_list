@@ -1,0 +1,185 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0079bf;
+  font-family: "HelveticaNeue";
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  background-color: #0067a3;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#menu .menu-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#menu .menu-wrap h1 {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.add-list {
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.add-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.add-list input {
+  height: 30px;
+}
+.add-list button {
+  padding: 9px 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  border: 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+.add-list button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: padding-box;
+  padding: 70px 20px 0 20px;
+}
+
+.lists {
+  display: flex;
+  align-items: flex-start;
+}
+.lists h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lists > div {
+  flex-wrap: nowrap;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 15px 10px;
+  width: 300px;
+  min-height: 100px;
+  max-height: 60%;
+  border-radius: 5px;
+  background-color: #e1e3e5;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  white-space: normal;
+}
+
+.add-card-form {
+  bottom: 10px;
+  display: block;
+  margin: 10px 0;
+}
+.add-card-form textarea {
+  display: block;
+  width: 295px;
+  margin: 10px 0 10px -2px;
+}
+.add-card-form button {
+  display: block;
+  padding: 10px 5px;
+  background-color: #0079bf;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.add-card-form button:hover {
+  background-color: #0067a3;
+}
+
+.cards strong {
+  font-style: italic;
+}
+
+.card {
+  display: block;
+  padding: 10px 5px;
+  background-color: #fff;
+  box-shadow: 1px 0 5px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin: 10px auto;
+}

@@ -1,6 +1,135 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 @import "compass/reset";
+
+$bright_blue: #0079BF;
+$dark_blue: #0067A3;
+$white: #fff;
+$grey: #E1E3E5;
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $bright_blue;
+	font-family: "HelveticaNeue";
+}
+#menu {
+	position: fixed;
+	top: 0;
+	background-color: $dark_blue;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	color: $white;
+	width: 100%;
+	text-align: center;
+	.menu-wrap {
+		position: relative;
+		height: 100%;
+		width: 100%;
+		h1 {
+			display: inline-block;
+			font-size: 25px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	
+}
+.add-list {
+	position: absolute;
+	top: 0;
+	left: 20px;
+	li {
+		display: inline-block;
+		margin-right: 10px;
+	}
+	input {
+		height: 30px;
+
+	}
+	button {
+		padding: 9px 5px;
+		background-color: rgba(255,255,255,0.3);
+		border-radius: 5px;
+		border: 0px;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: $white;
+		cursor: pointer;
+	}
+	button:hover {
+		background-color: rgba(255,255,255,0.5);
+	}
+
+}
+#content {
+	display: flex;
+	flex-direction: column;
+	box-sizing: padding-box;
+	padding: 70px 20px 0 20px;
+}
+.lists {
+	display: flex;
+	align-items: flex-start;
+	h3 {
+		font-size: 20px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+}
+.lists > div {
+	flex-wrap: nowrap;
+	display: inline-block;
+	margin-right: 20px;
+	padding: 15px 10px;
+	width: 300px;
+	min-height: 100px;
+	max-height: 60%;
+	border-radius: 5px;
+	background-color: $grey;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	white-space: normal;
+}
+.add-card-form {
+	bottom: 10px;
+	display: block;
+	margin: 10px 0;
+	textarea {
+		display: block;
+		width: 295px;
+		margin: 10px 0 10px -2px;
+	}
+	button {
+		display: block;
+		padding: 10px 5px;
+		background-color: $bright-blue;
+		border: 0px;
+		border-radius: 5px;
+		color: $white;
+		font-size: 13px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	button:hover {
+		background-color: $dark_blue;
+	}
+}
+.cards {
+	strong {
+		font-style: italic;
+	}
+}
+.card {
+	display: block;
+	padding: 10px 5px;
+	background-color: #fff;
+	box-shadow: 1px 0 5px rgba(255,255,255,.5);
+	border-radius: 5px;
+	margin: 10px auto;
+}
+
+
+

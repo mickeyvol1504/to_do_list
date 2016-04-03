@@ -1,0 +1,29 @@
+@media only screen and (max-width : 1200px) {
+	#menu{
+		text-align: right !important;
+	}
+	#menu .menu-wrap h1 {
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (max-width : 650px) {
+	#menu {
+		height: 100px !important;
+		text-align: center !important;
+		margin-right: 0 !important;
+	}
+	#menu .menu-wrap h1 {
+		font-size: 16px !important;
+		display: block !important;
+	}
+	.add-list {
+		position: static !important;
+	}
+	.add-list li {
+		margin-right: 5px;
+	}
+	#content {
+		padding-top: 110px !important;
+	}
+}
